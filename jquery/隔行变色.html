@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>更行变色</title>
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		jQuery(function(){
+			var jqLi = $("li");
+			console.log(jqLi.length);
+			for(var i=0;i<jqLi.length;i++){
+				if(i%2==0){
+					jqLi[i].style.background = "red";
+				}else{
+					jqLi[i].style.background = "yellow";
+				}
+			}
+		});
+	</script>
+</head>
+<body>
+	<ul>
+		<li>jquery更行变色</li>
+		<li>jquery更行变色</li>
+		<li>jquery更行变色</li>
+		<li>jquery更行变色</li>
+		<li>jquery更行变色</li>
+		<li>jquery更行变色</li>
+	</ul>
+</body>
+</html>
