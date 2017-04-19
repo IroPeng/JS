@@ -51,13 +51,13 @@
 	<script>
 		$(document).ready(function(){
 			var jqLi = $("li");
-			jqLi.mouseenter(function() {
+			jqLi.mouseenter(function () {
 				/* Act on the event */
-				$(this).children("ul").show();
+				$(this).children("ul").stop().slideDown(1000);
 			});
 			jqLi.mouseleave(function() {
 				/* Act on the event */
-				$(this).children("ul").hide();
+				$(this).children("ul").stop().slideUp(1000);
 			});
 		});
 	</script>
